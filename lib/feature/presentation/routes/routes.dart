@@ -4,7 +4,6 @@ import 'package:ecommerce_project/feature/presentation/screens/detail_screen/det
 import 'package:ecommerce_project/feature/presentation/screens/home_screen/home_screen.dart';
 import 'package:ecommerce_project/feature/presentation/screens/liked_screen/liked_screen.dart';
 import 'package:ecommerce_project/feature/presentation/screens/profile_screen/profile_screen.dart';
-import 'package:ecommerce_project/feature/presentation/screens/splash_screen/splash_screen.dart';
 
 export 'routes.gr.dart';
 
@@ -27,12 +26,8 @@ export 'routes.gr.dart';
       path: '/detail',
     ),
     AutoRoute(
-      page: HomeScreen,
-      path: '/homescreen',
-    ),
-    AutoRoute(
       initial: true,
-      page: SplashScreen,
+      page: HomeScreen,
       path: '/',
     ),
   ],

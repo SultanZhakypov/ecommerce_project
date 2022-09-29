@@ -9,7 +9,13 @@ import 'package:provider/provider.dart';
 
 import 'feature/presentation/providers/ecommerce_provider.dart';
 
-void main() => runApp(const MyApp());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(
+    const MyApp(),
+  );
+}
+
 final appRouter = AppRouter();
 
 class MyApp extends StatelessWidget {
