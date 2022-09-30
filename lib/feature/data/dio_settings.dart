@@ -16,7 +16,7 @@ class DioSettings {
         QueuedInterceptorsWrapper(onResponse: (e, handler) {
       return handler.next(e);
     }, onError: (DioError err, handler) {
-      handler.next(err);
+      return handler.next(err);
     }, onRequest: (options, handler) {
       return handler.next(options);
     });

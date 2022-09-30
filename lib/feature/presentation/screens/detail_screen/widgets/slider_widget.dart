@@ -18,9 +18,12 @@ class SliderWidget extends StatelessWidget {
         ),
         margin: const EdgeInsets.symmetric(horizontal: 12),
         alignment: Alignment.center,
-        child: CachedNetworkImage(
-          fit: BoxFit.cover,
-          imageUrl: image,
+        child: Hero(
+          tag: index,
+          child: CachedNetworkImage(
+            fit: BoxFit.cover,
+            imageUrl: image,
+          ),
         ),
       ),
       options: CarouselOptions(

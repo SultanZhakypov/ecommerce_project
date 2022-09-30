@@ -6,11 +6,11 @@ import 'package:ecommerce_project/feature/presentation/widgets/app_unfocuser.dar
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
-
 import 'feature/presentation/providers/ecommerce_provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
+
   runApp(
     const MyApp(),
   );

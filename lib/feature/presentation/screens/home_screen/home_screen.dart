@@ -24,6 +24,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final vm = Provider.of<EcommerceProvider>(context);
+
     return SafeArea(
       child: Scaffold(
         backgroundColor: AppColors.backgroundColor,

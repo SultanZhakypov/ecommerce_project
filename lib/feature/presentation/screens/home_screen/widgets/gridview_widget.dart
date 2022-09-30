@@ -59,16 +59,19 @@ class MyGridviewWidget extends StatelessWidget {
                           ),
                         ),
                         Expanded(
-                          child: CachedNetworkImage(
-                            placeholder: (context, url) => const Center(
-                              child: SpinKitCircle(
-                                color: AppColors.textColorPurple,
-                                size: 25,
+                          child: Hero(
+                            tag: index,
+                            child: CachedNetworkImage(
+                              placeholder: (context, url) => const Center(
+                                child: SpinKitCircle(
+                                  color: AppColors.textColorPurple,
+                                  size: 25,
+                                ),
                               ),
+                              fit: BoxFit.cover,
+                              imageUrl:
+                                  state.bestSeller[index].picture.toString(),
                             ),
-                            fit: BoxFit.cover,
-                            imageUrl:
-                                state.bestSeller[index].picture.toString(),
                           ),
                         ),
                         const SizedBox(height: 10),
