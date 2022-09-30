@@ -10,7 +10,6 @@ import 'feature/presentation/providers/ecommerce_provider.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-
   runApp(
     const MyApp(),
   );

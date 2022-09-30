@@ -2,9 +2,14 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
 class DioSettings {
+  DioSettings() {
+    setup();
+  }
   Dio dio = Dio(
     BaseOptions(
       baseUrl: 'https://run.mocky.io/v3/',
+      contentType: 'application/json',
+      headers: {'Accept': 'application/json'},
     ),
   );
 
